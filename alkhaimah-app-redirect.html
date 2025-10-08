@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Al Khaimah App Download</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .card { max-width: 600px; margin: 4rem auto; text-align: center; }
+    a.button { display: inline-block; padding: 14px 20px; margin: 8px; text-decoration: none; border: 1px solid #222; border-radius: 8px; }
+  </style>
+  <script>
+    (function() {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      var isAndroid = /android/i.test(ua);
+      var isIOS = /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document);
+      if (isAndroid) {
+        window.location.replace("https://play.google.com/store/apps/details?id=com.alkhaima.loyality.app");
+      } else if (isIOS) {
+        window.location.replace("https://apps.apple.com/ae/app/al-khaimah/id6739282054");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h1>Download Al Khaimah App</h1>
+    <p>If you weren't redirected automatically, choose your platform:</p>
+    <p>
+      <a class="button" href="https://apps.apple.com/ae/app/al-khaimah/id6739282054">iOS App Store</a>
+      <a class="button" href="https://play.google.com/store/apps/details?id=com.alkhaima.loyality.app">Google Play</a>
+    </p>
+  </div>
+</body>
+</html>
